@@ -19,4 +19,4 @@ jobs:
                   project_id: ${{ secrets.GCP_PROJECT_ID_TEST }}
                   service_account_key: ${{ secrets.GOOGLE_SERVICE_ACC_KEY_TEST }}
 
-            - run: gcloud functions deploy investDownloadLinks --runtime nodejs12 --trigger-http --allow-unauthenticated
+            - run: gcloud functions deploy ./app/investDownloadLinks --runtime nodejs12 --trigger-http --allow-unauthenticated
