@@ -36,16 +36,16 @@ function buildJSON(investTag) {
     "nid":"14056",
     "links": [
       {
-        "title": `"Download InVEST ${latestTag} (Windows)"`,
-        "url": `${baseUrl}/invest/${latestTag}/InVEST_${latestTag}_x64_Setup.exe"`
+        "title": `Download InVEST ${latestTag} (Windows)`,
+        "url": `${baseUrl}/invest/${latestTag}/InVEST_${latestTag}_x64_Setup.exe`
       },
       {
-        "title": `"Download InVEST ${latestTag} (Mac)"`,
-        "url": `"${baseUrl}/invest/${latestTag}/InVEST-${latestTag}-mac.zip"`
+        "title": `Download InVEST ${latestTag} (Mac)`,
+        "url": `${baseUrl}/invest/${latestTag}/InVEST-${latestTag}-mac.zip`
       },
       {
-        "title": `"InVEST User's Guide (online)"`,
-        "url": `"${baseUrl}/invest-userguide/latest/index.html"`
+        "title": "InVEST User's Guide (online)",
+        "url": `${baseUrl}/invest-userguide/latest/index.html`
       },
       {
         "title": "Older and Development Versions of InVEST",
