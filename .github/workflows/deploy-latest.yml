@@ -1,0 +1,22 @@
+name: Deploy InVEST Download Link Updater
+
+on:
+    push:
+
+jobs:
+    
+    deploy-latest:
+        name: "Deploy Gcloud Function"
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Set up GCP
+              # Secrets not available in PR so don't use GCP.
+              # We only want to deploy function in a release.
+              uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+              with:
+                  version: '290.0.1'
+                  project_id: ${{ secrets.GCP_PROJECT_ID_TEST }}
+                  service_account_key: ${{ secrets.GOOGLE_SERVICE_ACC_KEY_TEST }}
+
+            - run: gcloud functions deploy investDownloadLinks --runtime nodejs12 --trigger-http --allow-unauthenticated
