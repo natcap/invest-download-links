@@ -91,6 +91,7 @@ exports.investDownloadLinks = (req, res) => {
     .then(resultTags => parseTag(resultTags))
     .then(latestTag => buildJSON(latestTag))
     .then(sendResult => {
+      res.header("Content-Type", 'application/json');
       res.json(sendResult);
     })
     .catch(failureCallback);
