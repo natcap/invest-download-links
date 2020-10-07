@@ -1,0 +1,14 @@
+{
+  "name": "investLinkUpdater",
+  "version": "0.0.0",
+  "description": "Upldate InVEST download links to the latest release version.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "simple-git": "^2.21.0"
+  },
+  "author": "NatCap",
+  "license": "ISC"
+}
