@@ -53,7 +53,7 @@ function buildJSON(investTag) {
       },
       {
         "title": "Individual Sample Datasets for InVEST",
-        "url": "http://releases.naturalcapitalproject.org/?prefix=invest/3.8.9/data/"
+        "url": `http://releases.naturalcapitalproject.org/?prefix=invest/${latestTag}data/`
       },
       {
         "title": "生态系统服务评估与权衡（InVEST）模型（3.2.0 版本）使用手册",
