@@ -50,7 +50,7 @@ function buildJSON(investTag) {
       },
       {
         "title": `Download InVEST ${latestTag} (Mac)`,
-        "url": `${baseUrl}/invest/${latestTag}/InVEST-${latestTag}-mac.${macExt}`
+        "url": `${baseUrl}/invest/${latestTag}/InVEST_${latestTag}.${macExt}`
       },
       {
         "title": "InVEST User's Guide (online)",
