@@ -45,7 +45,6 @@ function buildJSON(investTag) {
     "nid":"14056",
     "links": [
       {
-<<<<<<< HEAD
         "title": `Download InVEST ${latestTag} (Windows) - new Workbench!`,
         "url": `${baseUrl}/invest/${latestTag}/workbench/InVEST_${latestTag}_workbench_win32_x64.exe`
       },
@@ -59,15 +58,7 @@ function buildJSON(investTag) {
       },
       {
         "title": `Download InVEST ${latestTag} (Mac) - old application`,
-        "url": `${baseUrl}/invest/${latestTag}/InVEST-${latestTag}-mac.zip`
-=======
-        "title": `Download InVEST ${latestTag} (Windows)`,
-        "url": `${baseUrl}/invest/${latestTag}/InVEST_${latestTag}_${arch}_Setup.exe`
-      },
-      {
-        "title": `Download InVEST ${latestTag} (Mac)`,
         "url": `${baseUrl}/invest/${latestTag}/InVEST_${latestTag}.${macExt}`
->>>>>>> 12e3fd4acf4226acef8b516856b6b90a03442233
       },
       {
         "title": "InVEST User's Guide (online)",
