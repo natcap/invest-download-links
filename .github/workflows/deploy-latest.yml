@@ -13,7 +13,7 @@ jobs:
             - name: Set up GCP
               # Secrets not available in PR so don't use GCP.
               # We only want to deploy function in a release.
-              uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+              uses: google-github-actions/setup-gcloud@v0
               with:
                   version: '290.0.1'
                   project_id: ${{ secrets.GCP_PROJECT_ID }}
