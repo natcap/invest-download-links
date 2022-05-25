@@ -53,11 +53,11 @@ function buildJSON(investTag) {
         "url": `${baseUrl}/invest/${latestTag}/workbench/invest_${latestTag}_workbench_darwin_x64.dmg`
       },
       {
-        "title": `Download InVEST ${latestTag} (Windows) - old application`,
+        "title": `Download InVEST ${latestTag} (Windows) - classic application`,
         "url": `${baseUrl}/invest/${latestTag}/InVEST_${latestTag}_x64_Setup.exe`
       },
       {
-        "title": `Download InVEST ${latestTag} (Mac) - old application`,
+        "title": `Download InVEST ${latestTag} (Mac) - classic application`,
         "url": `${baseUrl}/invest/${latestTag}/InVEST_${latestTag}.${macExt}`
       },
       {
