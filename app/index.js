@@ -46,11 +46,11 @@ function buildJSON(investTag) {
     "links": [
       {
         "title": `Download InVEST ${latestTag} (Windows) - new Workbench!`,
-        "url": `${baseUrl}/invest/${latestTag}/workbench/InVEST_${latestTag}_workbench_win32_x64.exe`
+        "url": `${baseUrl}/invest/${latestTag}/workbench/invest_${latestTag}_workbench_win32_x64.exe`
       },
       {
         "title": `Download InVEST ${latestTag} (Mac) - new Workbench!`,
-        "url": `${baseUrl}/invest/${latestTag}/workbench/InVEST-${latestTag}_workbench_darwin_x64.dmg`
+        "url": `${baseUrl}/invest/${latestTag}/workbench/invest_${latestTag}_workbench_darwin_x64.dmg`
       },
       {
         "title": `Download InVEST ${latestTag} (Windows) - old application`,
