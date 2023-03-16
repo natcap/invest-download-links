@@ -2,6 +2,8 @@ name: Deploy InVEST Download Link Updater
 
 on:
     push:
+      branches:
+        - main
 
 jobs:
     
