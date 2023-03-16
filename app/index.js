@@ -23,7 +23,7 @@ function parseTag(tagString) {
 }
 
 function buildJSON(investTag) {
-  const defaultTag = '3.8.8';
+  const defaultTag = '3.12.1';
   let latestTag = '';
   const regex = /[0-9]+\.[0-9]+\.[0-9]+/g;
   let validTag = investTag.match(regex);
