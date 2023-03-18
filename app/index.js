@@ -45,7 +45,7 @@ function buildJSON(investTag) {
     "nid":"14056",
     "links": [
       {
-        "title": `Download InVEST ${latestTag} (Windows) - Workbench`,
+        "title": `Download InVEST ${latestTag} Workbench (Windows)`,
         "url": `${baseUrl}/invest/${latestTag}/workbench/invest_${latestTag}_workbench_win32_x64.exe`
       },
       {
