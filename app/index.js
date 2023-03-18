@@ -23,7 +23,7 @@ function parseTag(tagString) {
 }
 
 function buildJSON(investTag) {
-  const defaultTag = '3.8.8';
+  const defaultTag = '3.12.1';
   let latestTag = '';
   const regex = /[0-9]+\.[0-9]+\.[0-9]+/g;
   let validTag = investTag.match(regex);
@@ -45,24 +45,24 @@ function buildJSON(investTag) {
     "nid":"14056",
     "links": [
       {
-        "title": `Download InVEST ${latestTag} (Windows) - new Workbench!`,
+        "title": `Download InVEST ${latestTag} Workbench (Windows)`,
         "url": `${baseUrl}/invest/${latestTag}/workbench/invest_${latestTag}_workbench_win32_x64.exe`
       },
       {
-        "title": `Download InVEST ${latestTag} (Mac) - new Workbench!`,
+        "title": `Download InVEST ${latestTag} Workbench (Mac)`,
         "url": `${baseUrl}/invest/${latestTag}/workbench/invest_${latestTag}_workbench_darwin_x64.dmg`
       },
       {
-        "title": `Download InVEST ${latestTag} (Windows) - classic application`,
-        "url": `${baseUrl}/invest/${latestTag}/InVEST_${latestTag}_x64_Setup.exe`
+        "title": "InVEST User's Guide (English)",
+        "url": `${baseUrl}/invest-userguide/latest/en/index.html`
       },
       {
-        "title": `Download InVEST ${latestTag} (Mac) - classic application`,
-        "url": `${baseUrl}/invest/${latestTag}/InVEST_${latestTag}.${macExt}`
+        "title": "Guía de uso de InVEST (Español)",
+        "url": `${baseUrl}/invest-userguide/latest/es/index.html`
       },
       {
-        "title": "InVEST User's Guide (online)",
-        "url": `${baseUrl}/invest-userguide/latest/index.html`
+        "title": "InVEST用户指南 (中文)",
+        "url": `${baseUrl}/invest-userguide/latest/zh/index.html`
       },
       {
         "title": "Older and Development Versions of InVEST",
@@ -72,14 +72,6 @@ function buildJSON(investTag) {
         "title": "Individual Sample Datasets for InVEST",
         "url": `http://releases.naturalcapitalproject.org/?prefix=invest/${latestTag}/data/`
       },
-      {
-        "title": "生态系统服务评估与权衡（InVEST）模型（3.2.0 版本）使用手册",
-        "url": "https://storage.googleapis.com/invest-users-guides/InVEST%203.2.0%20User's%20Guide_Chinese%20Version_20171008.pdf"
-      },
-      {
-        "title": "InVEST User's Guide (Español)",
-        "url": "https://naturalcapitalproject.stanford.edu/sites/g/files/sbiybj9321/f/invest_version_en_espanol_oct_2019.pdf"
-      }
     ]
 }
   return responseJson;
