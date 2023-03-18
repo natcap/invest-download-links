@@ -61,7 +61,7 @@ function buildJSON(investTag) {
         "url": `${baseUrl}/invest-userguide/latest/es/index.html`
       },
       {
-        "title": "InVEST用户指南 (中国人)",
+        "title": "InVEST用户指南 (中文)",
         "url": `${baseUrl}/invest-userguide/latest/zh/index.html`
       },
       {
