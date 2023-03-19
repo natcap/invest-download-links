@@ -2,22 +2,23 @@ name: Deploy InVEST Download Link Updater
 
 on:
     push:
-      branches:
-        - main
+        branches:
+            - main
 
 jobs:
-    
+
     deploy-latest:
         name: "Deploy Gcloud Function"
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
+
             - name: Set up GCP
               # Secrets not available in PR so don't use GCP.
               # We only want to deploy function in a release.
+              if: github.event_name != 'pull_request'
               uses: google-github-actions/setup-gcloud@v0
               with:
-                  version: '290.0.1'
                   project_id: ${{ secrets.GCP_PROJECT_ID }}
                   service_account_key: ${{ secrets.GOOGLE_SERVICE_ACC_KEY }}
 
