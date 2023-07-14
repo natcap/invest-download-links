@@ -6,7 +6,7 @@ function parseTag(tagString) {
     try {
       const regex = /[0-9]+\.[0-9]+\.[0-9]+/g;
       let foundTags = tagString.match(regex);
-      // Since GC server does not allow --sort git option we must sort 
+      // Since GC server does not allow --sort git option we must sort
       // tags ourselves
       const sortedTags = foundTags.map( a => a.split('.').map( n => +n+10000 ).join('.') ).sort()
                                   .map( a => a.split('.').map( n => +n-10000 ).join('.') );
@@ -65,6 +65,10 @@ function buildJSON(investTag) {
         "url": `${baseUrl}/invest-userguide/latest/zh/index.html`
       },
       {
+        "title": "InVEST GitHub Repository",
+        "url": "https://github.com/natcap/invest"
+      },
+      {
         "title": "Older and Development Versions of InVEST",
         "url": "http://releases.naturalcapitalproject.org/?prefix=invest/"
       },
@@ -91,7 +95,7 @@ function failureCallback(error) {
  *
  */
 exports.investDownloadLinks = (req, res) => {
-  // The google cloud server has a version of 'git' that does not support 
+  // The google cloud server has a version of 'git' that does not support
   // --sort
   //var git_options = ["--tags", "--sort=-v:refname", "git@github.com:natcap/invest.git"];
   var git_options = ["--tags", "https://github.com/natcap/invest.git"];
